@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.19)
-project(foo)
+project(cocoa-app)
 
 add_executable(
-    foo
+    cocoa-app
     MACOSX_BUNDLE
     AppDelegate.h
     AppDelegate.mm
@@ -18,7 +18,7 @@ set_source_files_properties(
 )
 
 set_target_properties(
-    foo
+    cocoa-app
     PROPERTIES
     MACOSX_BUNDLE_INFO_PLIST
     ${CMAKE_CURRENT_LIST_DIR}/plist.in
